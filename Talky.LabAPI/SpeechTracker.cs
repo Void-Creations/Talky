@@ -55,7 +55,7 @@ namespace Talky.LabAPI
             {
                 // Non-animated character model speaking
                 //ev.Player.ShowHint("You cannot animate",1f);
-                Logger.Debug("No animated model for " + player.Nickname);
+                //Logger.Debug("No animated model for " + player.Nickname);
                 return;
             }
             
