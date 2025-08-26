@@ -14,13 +14,13 @@ namespace Talky.LabAPI
         {
             if (sender is not PlayerCommandSender playerSender)
             {
-                response = "This command can only be used by players.";
+                response = "Bu komut sadece oyuncular tarafından kullanılabilir.";
                 return false;
             }
 
             if (arguments.Count != 1)
             {
-                response = $"Invalid emotion. Valid emotions are: Angry, AwkwardSmile, Chad, Happy, Neutral, Ogre, Scared";
+                response = $"Geçersiz duygu. Geçerli duygular şunlardır: Angry, AwkwardSmile, Chad, Happy, Neutral, Ogre, Scared";
                 return false;
             }
 
@@ -33,21 +33,21 @@ namespace Talky.LabAPI
                 {
                     tracker.DefaultPreset = preset;
                 }
-                response = $"Your emotion has been set to {preset}.";
+                response = $"Duygularınız {preset} olarak ayarlandı.";
                 return true;
             }
             else
             {
-                response = $"Invalid emotion. Valid emotions are: Angry, AwkwardSmile, Chad, Happy, Neutral, Ogre, Scared";
+                response = $"Geçersiz duygu. Geçerli duygular şunlardır: Angry, AwkwardSmile, Chad, Happy, Neutral, Ogre, Scared";
                 return false;
             }
-            response = $"Your emotion has been set to {emotion}.";
+            response = $"Duygularınız {emotion} olarak ayarlandı.";
             return true;
         }
 
-        public override string Command { get; } = "emotion";
-        public override string[] Aliases { get; } = { "emote" };
-        public override string Description { get; } = "Sets your character's facial expression. Valid emotions are: Angry, AwkwardSmile, Chad, Happy, Neutral, Ogre, Scared";
+        public override string Command { get; } = "duygular";
+        public override string[] Aliases { get; } = { "duygu" };
+        public override string Description { get; } = "Karakterinizin yüz ifadesini belirler. Geçerli duygular şunlardır: Angry, AwkwardSmile, Chad, Happy, Neutral, Ogre, Scared";
 
         public override void LoadGeneratedCommands()
         {
