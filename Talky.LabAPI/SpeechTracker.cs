@@ -67,7 +67,7 @@ namespace Talky.LabAPI
                 {
                     hub.ServerSetEmotionPreset(DefaultPreset);
                     LastLevel = -1;
-                    Logger.Info("Set "+ DefaultPreset+" for " + player.Nickname);
+                    //Logger.Info("Set "+ DefaultPreset+" for " + player.Nickname);
                 }
                 
             }
