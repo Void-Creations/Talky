@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using CommandSystem;
 using LabApi.Features.Wrappers;
 using PlayerRoles.FirstPersonControl.Thirdperson.Subcontrollers;
